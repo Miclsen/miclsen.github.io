@@ -5,11 +5,12 @@ import path from 'node:path'
 
 import siteConfiguration from './.figma/make/site.json'
 
+
 const isFigmaSandbox = process.env.FIGMA === '1' || process.env.FIGMA === 'true'
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
+  base: '/miclsen.github.io',
   plugins: [
     react(),
     tailwindcss(),
