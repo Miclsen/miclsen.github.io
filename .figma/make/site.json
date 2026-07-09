@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your creative talents with an interactive portfolio that blends video editing and software engineering in a unique pixel art style.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
