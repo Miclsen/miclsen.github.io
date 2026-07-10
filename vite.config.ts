@@ -1,10 +1,13 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import path from 'node:path'
 
-import siteConfiguration from './figma/make/site.json'
 
+const siteConfiguration = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, './.figma/make/site.json'), 'utf-8')
+)
 
 const isFigmaSandbox = process.env.FIGMA === '1' || process.env.FIGMA === 'true'
 
