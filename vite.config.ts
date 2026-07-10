@@ -13,7 +13,7 @@ const isFigmaSandbox = process.env.FIGMA === '1' || process.env.FIGMA === 'true'
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig({
-  base: '/miclsen.github.io',
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
